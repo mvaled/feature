@@ -1084,9 +1084,9 @@ features["HTML.Microdata.Document.DocumentFragment.getItems"] = !!(document.crea
     var works = false;
     var number = 0;
     try {
-	number.toLocaleString("i");
+        number.toLocaleString("i");
     } catch (e) {
-	works = (e.name === "RangeError");
+        works = (e.name === "RangeError");
     }
     features["DOM.Number.toLocalString(locale, options)"] = works;
 }());
